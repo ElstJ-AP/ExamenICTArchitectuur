@@ -3,7 +3,7 @@ Jonas Elst		2TI
 Vraag 1: Welke belangrijke tradeoffs zijn er gemaakt?
 
 Een belangrijke tradeoff is dat ze een aparte applicatie gebuiken, die ook data haalt uit de operational database, om de verkoop te monitoren en hierdoor zal de hoofdapplicatie trager werken terwijl de monitor applicatie aan het werken is.
-Een andere tradeoff is dat er al bestaande accounting software, die een eigen database heeft, wordt gebruikt en hierdoor zijn er twee databases nodig.
+Ook is er gekozen voor een gelayerde architectuur waardoor ondermeer de belangrijke logica extra beveiligd kan worden, dit ten koste van performantie aangezien de layers elkaar steeds moeten aanspreken.
 
 
 Vraag 2: Waar zit het grootste risico in deze architectuur?
